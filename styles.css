@@ -14,7 +14,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 80px 5% 80px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #f0f2f5 50%, #e8eaf6 100%);
     text-align: center;
 }
 
@@ -23,8 +23,30 @@ body {
     margin: 0 auto;
 }
 
+/* Brand styles for hero section */
+.hero .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    margin-bottom: 30px;
+}
+
+.hero .brand .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.hero .brand .brand-name {
+    font-weight: 700;
+    font-size: 1.25em;
+    color: #1a1a1a;
+}
+
 .hero h1 {
     font-size: 2.5em;
+    line-height: auto;
     margin-bottom: 20px;
     color: #1a1a1a;
 }
@@ -43,24 +65,46 @@ body {
 
 /* Utility classes */
 .cta-button {
-    display: inline-block;
-    padding: 12px 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
     background-color: #25D366;
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 50px;
     font-weight: 600;
+    font-size: 1.2em;
     transition: all 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #128C7E;
-    transform: translateY(-2px);
+/* Hero section specific CTA button */
+.hero .cta-button {
+    background-color: #25D366; /* Darker green for better contrast against light background */
+    color: white;
+    box-shadow: 0 4px 12px rgba(18, 140, 126, 0.2); /* Subtle shadow for depth */
 }
 
-.cta-button.large {
-    padding: 16px 32px;
-    font-size: 1.2em;
+.hero .cta-button:hover {
+    background-color: #075E54; /* Even darker green on hover for maximum contrast */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(18, 140, 126, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Signup section specific CTA button */
+.signup .cta-button {
+    background-color: white;
+    color: #25D366;
+}
+
+.signup .cta-button:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.cta-button i {
+    font-size: 1.4em;
 }
 
 /* Features Section */
@@ -200,25 +244,12 @@ body {
 }
 
 .whatsapp-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.2em;
-    padding: 16px 32px;
     background-color: white;
     color: #25D366;
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-.whatsapp-button i {
-    font-size: 1.4em;
 }
 
 .whatsapp-button:hover {
     background-color: #f8f9fa;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 /* Footer */
