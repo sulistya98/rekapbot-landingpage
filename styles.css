@@ -234,6 +234,25 @@ footer {
     margin: 0 auto;
 }
 
+.footer-content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-content .logo-img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.footer-content .logo span {
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero h1 {
